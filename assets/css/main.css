@@ -454,14 +454,14 @@
 		border-bottom: none;
 	}
 
-		.icon:before {
+		/*.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: "Font Awesome 5 Free";
 			font-style: normal;
 			font-weight: 400;
 			text-transform: none !important;
-		}
+		} */
 
 		.icon > .label {
 			display: none;
@@ -531,14 +531,14 @@
 					white-space: nowrap;
 				}
 
-					ul.icons li a:before {
+					/* ul.icons li a:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						font-family: "Font Awesome 5 Free";
 						font-style: normal;
 						font-weight: 400;
-						text-transform: none !important;
-					}
+						text-transform: none !important; 
+					} */
 
 					ul.icons li a:before {
 						color: #ffffff;
