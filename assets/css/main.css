@@ -85,10 +85,10 @@
 	body {
 		height: 100%;
 		background-color: #ffffff;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%), url("../../images/bg.jpg");
 		background-repeat: repeat,			no-repeat,			no-repeat;
 		background-size: 100px 100px, cover,				cover;
 		background-position: top left,		center center,		bottom center;
@@ -106,10 +106,8 @@
 			opacity: 0;
 			z-index: 1;
 			background-color: #ffffff;
-			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%);		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%);		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 95%);
 			background-repeat: repeat,			no-repeat;
 			background-size: 100px 100px, cover;
 			background-position: top left,		center center;
@@ -126,13 +124,12 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #414f57;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: BentonSansRegular,Helvetica,Arial,sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
-		line-height: 2;
-		letter-spacing: 0.2em;
-		text-transform: uppercase;
+		line-height: 1.5;
+		padding: 0;
+		margin: 0;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -185,9 +182,8 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313f47;
+		color: #fff;
 		line-height: 1.5;
-		margin: 0 0 0.75em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -197,8 +193,6 @@
 
 	h1 {
 		font-size: 1.85em;
-		letter-spacing: 0.22em;
-		margin: 0 0 0.525em 0;
 	}
 
 	h2 {
@@ -481,8 +475,6 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 1.5em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
@@ -507,8 +499,10 @@
 		ul.icons {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
-			margin-top: -0.675em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 			ul.icons li {
@@ -523,7 +517,7 @@
 					width: 3.75em;
 					height: 3.75em;
 					border-radius: 100%;
-					border: solid 1px #c8cccf;
+					border: solid 1px #990000;
 					line-height: 3.75em;
 					overflow: hidden;
 					text-align: center;
@@ -541,12 +535,12 @@
 					} */
 
 					ul.icons li a:before {
-						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+						color: #EDEBEB;
+						text-shadow: 1.25px 0px 0px #7A1705, -1.25px 0px 0px #7A1705, 0px 1.25px 0px #7A1705, 0px -1.25px 0px #7A1705;
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+						text-shadow: 1.25px 0px 0px #B8B0AB, -1.25px 0px 0px #B8B0AB, 0px 1.25px 0px #B8B0AB, 0px -1.25px 0px #B8B0AB;
 					}
 
 					ul.icons li a:before {
@@ -562,7 +556,7 @@
 					}
 
 					ul.icons li a:hover {
-						border-color: #ff7496;
+						border-color: #B8B0AB;
 					}
 
 			@media screen and (max-width: 480px) {
@@ -702,14 +696,16 @@
 
 	#main {
 		position: relative;
-		max-width: 100%;
-		min-width: 27em;
-		padding: 4.5em 3em 3em 3em ;
-		background: #ffffff;
-		border-radius: 4px;
+		height: 70vh;
+		width: 30vw;
+		opacity: 0.96;
+		background-color: #7A1705;
+		border-top: 5px solid #990000;
 		cursor: default;
-		opacity: 0.95;
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		-moz-transform-origin: 50% 50%;
 		-webkit-transform-origin: 50% 50%;
 		-ms-transform-origin: 50% 50%;
@@ -723,18 +719,109 @@
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
 	}
+		#profile-top {
+			height: 60%;
+			width: 100%;
+			border-bottom: 3px solid #B8B0AB;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		#profile-bottom {
+			height: 40%;
+			width: 100%;
+			background-color: #EDEBEB;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		#profile-image {
+			height: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#profile-education {
+			height: 55px;
+			width: 45px;
+			position: absolute;
+			bottom: -27px;
+			background: #990000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	
+		#profile-education img {
+			max-height: 40px;
+			max-width: 40px;
+		}	
+
+		#profile-name {
+			text-align: center;
+		}
+		
+		#profile-name h1 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-style: normal;
+		}
+
+		#campus-name {
+			font-family: BentonSansCondRegular, Arial, serif;
+			font-weight: normal;
+			color: #fff;
+			font-size: 18px;
+			text-transform: uppercase;
+			text-align: center;
+			background: #990000;
+			position: absolute;
+			bottom: -5%;
+			padding: 5px 15px;
+			background-image: url("../../images/iu-sig-formal.svg");
+			display: none;
+
+		}
+
+		#main .avatar:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 30%;
+			width: 40%;
+			height: 100%;
+			opacity: 1;
+			border-radius: 100%;
+			z-index: 1;
+			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(153, 0, 0, 0.5) 5%, rgba(255, 255, 255, 0.10));
+			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(153, 0, 0, 0.5) 5%, rgba(255, 255, 255, 0.10));
+			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(153, 0, 0, 0.5) 5%, rgba(255, 255, 255, 0.10));
+			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(153, 0, 0, 0.5) 5%, rgba(255, 255, 255, 0.10));
+			background-repeat: repeat,			no-repeat;
+			background-size: 100px 100px, cover;
+			background-position: top left,		center center;
+			-moz-transition: opacity 1.75s ease-out;
+			-webkit-transition: opacity 1.75s ease-out;
+			-ms-transition: opacity 1.75s ease-out;
+			transition: opacity 1.75s ease-out;
+		}
 
 		#main .avatar {
 			position: relative;
 			display: block;
-			margin-bottom: 1.5em;
 		}
 
 			#main .avatar img {
+				width: 40%;
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
-				box-shadow: 0 0 0 1.5em #ffffff;
+				box-shadow: 0 0 0 1.5em #7A1705;
 			}
 
 			#main .avatar:before {
@@ -742,11 +829,9 @@
 				display: block;
 				position: absolute;
 				top: 50%;
-				left: -3em;
-				width: calc(100% + 6em);
-				height: 1px;
+				width: 100%;				height: 1px;
 				z-index: -1;
-				background: #c8cccf;
+				background: #fff;
 			}
 
 		@media screen and (max-width: 480px) {
