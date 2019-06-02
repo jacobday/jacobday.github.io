@@ -749,6 +749,8 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			white-space: nowrap;
+			overflow-x: scroll;
 		}
 		
 		#profile-image {
@@ -773,6 +775,7 @@
 		#profile-education img {
 			max-height: 40px;
 			max-width: 40px;
+			z-index: 1;
 		}	
 
 		#profile-name {
