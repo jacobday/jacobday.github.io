@@ -564,11 +564,12 @@
 					#paypal:hover:before { text-shadow: 1.25px 0px 0px #0079C1, -1.25px 0px 0px #00457C, 0px 1.25px 0px #00457C, 0px -1.25px 0px #00457C; }
 					#facebook:hover:before { text-shadow: 1.25px 0px 0px #3C5A99, -1.25px 0px 0px #3C5A99, 0px 1.25px 0px #3C5A99, 0px -1.25px 0px #3C5A99; }
 					#messenger:hover:before { text-shadow: 1.25px 0px 0px #0078FF, -1.25px 0px 0px #0078FF, 0px 1.25px 0px #00C6FF, 0px -1.25px 0px #0078FF; }
-					#apple:hover:before { text-shadow: 1.25px 0px 0px #E6C7C2, -1.25px 0px 0px #E6C7C2, 0px 1.25px 0px #E6C7C2, 0px -1.25px 0px #E6C7C2; }
+					#apple:hover:before { text-shadow: 1.25px 0px 0px #000, -1.25px 0px 0px #000, 0px 1.25px 0px #000, 0px -1.25px 0px #000; }
 					#youtube:hover:before { text-shadow: 1.25px 0px 0px #FF0000, -1.25px 0px 0px #FF0000, 0px 1.25px 0px #FF0000, 0px -1.25px 0px #FF0000; }
 
 					ul.icons li a:hover {
 						border-color: #7A1705;
+						background-color: rgba(0,0,0,0.2);
 					}
 
 			@media screen and (max-width: 480px) {
@@ -715,6 +716,7 @@
 		border-top: 5px solid #990000;
 		box-shadow: 0 1px 4px -1px rgba(0,0,0,1);
 		cursor: default;
+		overflow: hidden;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -754,10 +756,11 @@
 		}
 		
 		#profile-image {
-			height: 60%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			position: absolute;
+			top: 16%;
 		}
 
 		#profile-education {
@@ -779,7 +782,32 @@
 		}	
 
 		#profile-name {
-			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			position: absolute;
+			bottom: 8%;
+			z-index: 2;
+		}
+
+		#profile-name img {
+			width: 40%;
+			position: relative;
+			z-index: 1;
+		}
+
+		#profile-name:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 2px;
+			width: 40%;
+			height: 100%;
+			background-image: url("images/signature-black.png");
+			opacity: 0.6;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 		
 		#profile-name h1 {
