@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* @import url(font-awesome.min.css); */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 /*
 	Identity by HTML5 UP
@@ -448,15 +446,6 @@
 		border-bottom: none;
 	}
 
-		/*.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: "Font Awesome 5 Free";
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none !important;
-		} */
-
 		.icon > .label {
 			display: none;
 		}
@@ -503,6 +492,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			z-index: 1;
 		}
 
 			ul.icons li {
@@ -527,15 +517,6 @@
 
 				}
 
-					/* ul.icons li a:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						font-family: "Font Awesome 5 Free";
-						font-style: normal;
-						font-weight: 400;
-						text-transform: none !important; 
-					} */
-
 					ul.icons li a:before {
 						color: #EDEBEB;
 						text-shadow: 1.25px 0px 0px #7A1705, -1.25px 0px 0px #7A1705, 0px 1.25px 0px #7A1705, 0px -1.25px 0px #7A1705;
@@ -558,6 +539,7 @@
 						text-align: center;
 						text-indent: 0;
 					}
+
 					#instagram:hover:before { text-shadow: 1.25px 0px 0px rgba(193,53,132,1), -1.25px 0px 0px rgba(247,119,55,1), 0px 1.25px 0px rgba(225,48,108,1), 0px -1.25px 0px rgba(64,93,230,1); }
 					#snapchat:hover:before { text-shadow: 1.25px 0px 0px #FFFC00, -1.25px 0px 0px #FFFC00, 0px 1.25px 0px #FFFC00, 0px -1.25px 0px #FFFC00; }
 					#twitter:hover:before { text-shadow: 1.25px 0px 0px #657786, -1.25px 0px 0px rgba(29,161,242,1), 0px 1.25px 0px rgba(29,161,242,1), 0px -1.25px 0px rgba(29,161,242,1); }
@@ -753,6 +735,7 @@
 			align-items: center;
 			white-space: nowrap;
 			overflow-x: scroll;
+			z-index: 1;
 		}
 		
 		#profile-image {
@@ -774,12 +757,13 @@
 			justify-content: center;
 			align-items: center;
 			box-shadow: 0 2px 2px 0px rgba(0,0,0,0.3);
+			z-index: 2;
 		}
 	
 		#profile-education img {
 			max-height: 40px;
 			max-width: 40px;
-			z-index: 1;
+			z-index: 3;
 		}	
 
 		#profile-name {
@@ -788,12 +772,12 @@
 			align-items: center;
 			width: 100%;
 			position: absolute;
-			bottom: 8%;
+			bottom: 6%;
 			z-index: 2;
 		}
 
 		#profile-name img {
-			width: 40%;
+			width: 42%;
 			position: relative;
 			z-index: 1;
 		}
@@ -803,7 +787,7 @@
 			display: block;
 			position: absolute;
 			top: 2px;
-			width: 40%;
+			width: 42%;
 			height: 100%;
 			background-image: url("images/signature-black.png");
 			opacity: 0.6;
@@ -874,7 +858,6 @@
 			}
 
 				#main .avatar:before {
-					left: -2em;
 					width: 100%;
 				}
 
@@ -932,10 +915,10 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
