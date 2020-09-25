@@ -305,7 +305,7 @@
 	}
 
 		.select-wrapper:before {
-			content: "";
+			content: "";
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: "Font Awesome 5 Free";
@@ -542,7 +542,8 @@
 
 					#instagram:hover:before { text-shadow: 1.25px 0px 0px rgba(193,53,132,1), -1.25px 0px 0px rgba(247,119,55,1), 0px 1.25px 0px rgba(225,48,108,1), 0px -1.25px 0px rgba(64,93,230,1); }
 					#snapchat:hover:before { text-shadow: 1.25px 0px 0px #FFFC00, -1.25px 0px 0px #FFFC00, 0px 1.25px 0px #FFFC00, 0px -1.25px 0px #FFFC00; }
-					#twitter:hover:before { text-shadow: 1.25px 0px 0px #657786, -1.25px 0px 0px rgba(29,161,242,1), 0px 1.25px 0px rgba(29,161,242,1), 0px -1.25px 0px rgba(29,161,242,1); }
+					#twitter:hover:before { text-shadow: 1.25px 0px 0px rgba(29,161,242,1), -1.25px 0px 0px rgba(29,161,242,1), 0px 1.25px 0px rgba(29,161,242,1), 0px -1.25px 0px rgba(29,161,242,1); }
+					#linkedin:hover:before { text-shadow: 1.25px 0px 0px #0073B1, -1.25px 0px 0px #0073B1, 0px 1.25px 0px #0073B1, 0px -1.25px 0px #0073B1; }
 					#paypal:hover:before { text-shadow: 1.25px 0px 0px #0079C1, -1.25px 0px 0px #00457C, 0px 1.25px 0px #00457C, 0px -1.25px 0px #00457C; }
 					#facebook:hover:before { text-shadow: 1.25px 0px 0px #3C5A99, -1.25px 0px 0px #3C5A99, 0px 1.25px 0px #3C5A99, 0px -1.25px 0px #3C5A99; }
 					#messenger:hover:before { text-shadow: 1.25px 0px 0px #0078FF, -1.25px 0px 0px #0078FF, 0px 1.25px 0px #00C6FF, 0px -1.25px 0px #0078FF; }
