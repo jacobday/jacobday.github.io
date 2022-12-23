@@ -1,0 +1,15 @@
+:root {
+  /* Global Fonts */
+  --global-serif: serif;
+  --global-sans-serif: "Inter", sans-serif;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: -1s !important;
+    animation-duration: 1s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+  }
+}
