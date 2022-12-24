@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+@font-face {
+  font-family: freight-big-pro;
+  src: url(../assets/FreightBigProBook.otf);
+}
+
+:root {
+  /* Fonts */
+  --theme-serif: freight-big-pro, serif;
+  --theme-sans-serif: "Questrial", sans-serif;
+
+  /* Borders */
+  --border-outer: 15px;
+  --border-inner: 7.5px;
+
+  /* Colors */
+  --color-background: #222224;
+
+  /* Misc */
+  --theme-shadow: 3px 9px 18px rgba(0, 0, 0, 0.2);
+  --theme-text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: var(--theme-sans-serif);
+  background-color: var(--color-background);
+}
+
+section.header {
+  height: 100vh;
+  width: 100vw;
+
+  color: white;
+
+  /* display: flex;
+  justify-content: space-between; */
+
+  padding: 12vh 7vw;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+section.header .container {
+  height: 100%;
+  width: 95%;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+section.header .signature,
+section.header .intro {
+  display: flex;
+  align-items: center;
+}
+
+section.header .intro {
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 4.5vw;
+}
+
+section.header .name {
+  font-family: var(--theme-serif);
+  font-size: 9em;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+
+  text-shadow: var(--theme-text-shadow);
+
+  margin: 0;
+}
+
+section.header .name > span:first-of-type {
+  line-height: 0.5;
+}
+
+section.header .occupation {
+  width: 60%;
+
+  font-family: var(--theme-sans-serif);
+  font-size: 0.9em;
+  font-weight: 400;
+
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  /* text-shadow: var(--theme-text-shadow); */
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+
+  margin-top: 7vh;
+  margin-bottom: 14vh;
+}
+
+section.header .scroll {
+letter-spacing: 3px;
+
+  margin-top: 10vh;
+  padding-bottom: 0.5em;
+}
+
+section.header .image-container {
+  height: 100%;
+  width: 80%;
+  box-sizing: border-box;
+
+  border-radius: var(--border-outer);
+  box-shadow: var(--theme-shadow);
+  margin-left: 5%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  overflow: hidden;
+}
+
+section.header .image-container img {
+  height: 100%;
+  width: 100%;
+
+
+  object-fit: cover;
+  transform: scaleX(-1);
+}
