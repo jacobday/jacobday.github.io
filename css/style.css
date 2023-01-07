@@ -58,6 +58,20 @@ section.header .intro {
   align-items: center;
 }
 
+section.header .signature {
+  height: 100%;
+}
+
+section.header .signature svg {
+  width: 32vh;
+  margin-left: -5vh;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.6));
+}
+
+section.header .signature svg * {
+  stroke: white;
+}
+
 section.header .intro {
   justify-content: flex-end;
   align-items: flex-start;
@@ -100,7 +114,7 @@ section.header .occupation {
 }
 
 section.header .scroll {
-letter-spacing: 3px;
+  letter-spacing: 3px;
 
   margin-top: 10vh;
   padding-bottom: 0.5em;
@@ -127,7 +141,19 @@ section.header .image-container img {
   height: 100%;
   width: 100%;
 
-
   object-fit: cover;
   transform: scaleX(-1);
+}
+
+/* Animations */
+.signature-reveal {
+  animation-name: strokeOffset;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes strokeOffset {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
