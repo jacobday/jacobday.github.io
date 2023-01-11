@@ -16,6 +16,7 @@
 
   /* Colors */
   --color-background: #222224;
+  --color-background-dark: #131314;
 
   /* Misc */
   --theme-shadow: 3px 9px 18px rgba(0, 0, 0, 0.2);
@@ -27,6 +28,7 @@ body {
   background-color: var(--color-background);
 }
 
+/* Header */
 section.header {
   height: 100vh;
   width: 100vw;
@@ -143,6 +145,127 @@ section.header .image-container img {
 
   object-fit: cover;
   transform: scaleX(-1);
+}
+
+/* Projects */
+section.projects {
+  margin-top: 30vh;
+  /* padding-left: 7vw; */
+}
+
+section.projects .container {
+  height: 75vh;
+  
+  /* padding-left: 5vw; */
+  display: flex;
+  /* gap: 10vw; */
+  gap: 6.5vw;
+  
+  padding-left: 7vw;
+  padding-right: 20vw;
+
+  overflow-x: scroll;
+}
+
+section.projects .card {
+  height: 55vh;
+  /* width: 25vw; */
+  /* width: 40vw; */
+
+  color: white;
+
+  display: flex;
+  gap: 2.5em;
+
+  position: relative;
+  /* box-sizing: border-box; */
+}
+
+section.projects .image-container {
+  height: 100%;
+  width: 25vw;
+
+  border-radius: var(--border-inner);
+  overflow: hidden;
+}
+
+section.projects img {
+  height: 100%;
+  width: 100%;
+  /* width: 25vw; */
+
+  background-color: var(--color-background-dark);
+
+  object-fit: cover;
+}
+
+section.projects .label {
+width: 55%;
+
+  display: flex;
+
+  position: absolute;
+  left: -24px;
+  bottom: 2vh;
+}
+
+section.projects .label .index {
+  height: 100%;
+
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 2.1em;
+
+  align-self: flex-end;
+  padding-left: 12px;
+
+  transform: rotate(-90deg);
+}
+
+section.projects .label .name {
+/* width: 100%; */
+
+  font-size: 2.4em;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  margin-left: 0.2em;
+}
+
+section.projects .meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+section.projects .description {
+  width: 15vw;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  line-height: 1.7;
+  margin-bottom: 2em;
+}
+
+section.projects .link-container {
+  margin-bottom: 2em;
+}
+
+section.projects .meta a.primary,
+section.projects .meta a.secondary {
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+}
+
+section.projects .meta a.primary {
+  color: rgba(255, 255, 255, 0.97);
+
+  background-color: var(--color-background-dark);
+  border-radius: 50px;
+}
+
+section.projects .meta a.secondary {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* Animations */

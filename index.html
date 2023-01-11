@@ -15,6 +15,7 @@
     <title>Jacob Day</title>
   </head>
   <body>
+    <!-- Section 1: Header -->
     <section class="header">
       <div class="container">
         <div class="signature">
@@ -40,6 +41,44 @@
       </div>
     </section>
 
+    <!-- Section 2: Projects -->
+    <section class="projects">
+      <div class="container">
+        <!-- Project card template -->
+        <template id="projectCard">
+          <div class="card">
+            <div class="image-container">
+              <img
+                src="./assets/runner.png"
+                alt="Colorful illustration of a runner"
+              />
+              <div class="label">
+                <div class="index">01</div>
+                <div class="name">Athlos</div>
+              </div>
+            </div>
+
+            <div class="meta">
+              <div class="description">
+                Reserve your favorite sports facilities, hire personal trainers,
+                and enlist game officials to oversee your next match.
+              </div>
+              <div class="link-container">
+                <a class="primary" href="athlos.html">Case Study</a>
+                <a
+                  class="secondary"
+                  href="https://athlos.vercel.app"
+                  target="_blank"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <script src="./assets/data/projects.json" type="text/json"></script>
     <script src="./js/main.js" type="text/javascript"></script>
   </body>
 </html>

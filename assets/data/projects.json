@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Athlos",
+    "url": "https://athlos.vercel.app",
+    "description": "Reserve your favorite sports facilities, hire personal trainers, and enlist game officials to oversee your next match.",
+    "featureImage": {
+      "src": "./assets/runner.png",
+      "alt": "Colorful illustration of a runner",
+      "style": "object-position: right"
+    },
+    "caseStudy": {
+      "url": "athlos.html"
+    }
+  },
+  {
+    "name": "‘We will always outlive the people who hate us’",
+    "url": "https://specials.idsnews.com/antisemitism-iu-mezuzah-the-avenue",
+    "description": "Antisemitic incidents reached an all-time high in the U.S. in 2021.",
+    "featureImage": {
+      "src": "./assets/maya.jpg",
+      "alt": "Maya Goldenberg lights candles prior to Shabbat, the seventh day of rest, at the beginning of Sukkot."
+    },
+    "caseStudy": {
+      "url": "antisemitism.html"
+    }
+  },
+  {
+    "name": "In Color",
+    "url": "https://github.com/jacobday/InColor",
+    "description": "Unleash your creativity with the ultimate drawing and tracing tool on iOS and iPadOS.",
+    "featureImage": {
+      "src": "./assets/in-color.svg",
+      "alt": "Colorful illustration of a runner",
+      "style": "object-fit: fill"
+    },
+    "caseStudy": {
+      "url": "in-color.html"
+    }
+  }
+]
