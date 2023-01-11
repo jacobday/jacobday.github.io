@@ -149,22 +149,25 @@ section.header .image-container img {
 
 /* Projects */
 section.projects {
-  margin-top: 30vh;
+  /* margin-top: 30vh; */
   /* padding-left: 7vw; */
+  margin-top: 5vh;
 }
 
 section.projects .container {
-  height: 75vh;
-  
+  /* height: 75vh; */
+  height: 100vh;
+
   /* padding-left: 5vw; */
   display: flex;
   /* gap: 10vw; */
   gap: 6.5vw;
-  
-  padding-left: 7vw;
-  padding-right: 20vw;
 
-  overflow-x: scroll;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  /* padding-right: 20vw; */
+
+  /* overflow-x: scroll; */
 }
 
 section.projects .card {
@@ -183,7 +186,9 @@ section.projects .card {
 
 section.projects .image-container {
   height: 100%;
-  width: 25vw;
+  /* width: 25vw; */
+  width: 360px;
+  /* max-width: 360px; */
 
   border-radius: var(--border-inner);
   overflow: hidden;
@@ -200,7 +205,7 @@ section.projects img {
 }
 
 section.projects .label {
-width: 55%;
+  width: 55%;
 
   display: flex;
 
@@ -222,7 +227,7 @@ section.projects .label .index {
 }
 
 section.projects .label .name {
-/* width: 100%; */
+  /* width: 100%; */
 
   font-size: 2.4em;
   font-weight: 800;
@@ -266,6 +271,24 @@ section.projects .meta a.primary {
 
 section.projects .meta a.secondary {
   color: rgba(255, 255, 255, 0.75);
+}
+
+/* Horizontal Scroll Galleries */
+.gallery-container {
+  position: relative;
+}
+
+.gallery {
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+
+  will-change: scroll-position;
 }
 
 /* Animations */
