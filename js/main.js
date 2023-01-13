@@ -9,28 +9,30 @@ function initSignature() {
     "Day-y3": { length: 0.4, function: "ease-out" },
   };
 
-  let animDelay = 0;
+  document.querySelectorAll(".signature").forEach((signature) => {
+    let animDelay = 0;
 
-  document.querySelectorAll(".signature > svg path").forEach((path) => {
-    const pathLength = path.getTotalLength();
-    path.style.strokeDasharray = pathLength;
-    path.style.strokeDashoffset = pathLength;
+    signature.querySelectorAll("svg path").forEach((path) => {
+      const pathLength = path.getTotalLength();
+      path.style.strokeDasharray = pathLength;
+      path.style.strokeDashoffset = pathLength;
 
-    let animLength = 0.15;
-    let animFunction = "linear";
+      let animLength = 0.15;
+      let animFunction = "linear";
 
-    if (path.id in pathProperties) {
-      const pathObj = pathProperties[path.id];
+      if (path.id in pathProperties) {
+        const pathObj = pathProperties[path.id];
 
-      animLength = pathObj.length;
-      animFunction = pathObj.function;
-    }
+        animLength = pathObj.length;
+        animFunction = pathObj.function;
+      }
 
-    path.style.animationDuration = `${animLength}s`;
-    path.style.animationDelay = `${animDelay}s`;
-    path.style.animationTimingFunction = animFunction;
+      path.style.animationDuration = `${animLength}s`;
+      path.style.animationDelay = `${animDelay}s`;
+      path.style.animationTimingFunction = animFunction;
 
-    animDelay += animLength;
+      animDelay += animLength;
+    });
   });
 }
 
@@ -77,6 +79,7 @@ function initObservers() {
   let signatureObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+        console.log(entry);
         if (entry.isIntersecting) {
           const paths = entry.target.querySelectorAll("path");
 
@@ -87,7 +90,7 @@ function initObservers() {
         }
       });
     },
-    { threshold: 0.9, rootMargin: "-5%" }
+    { threshold: 0.8 }
   );
 
   // Observe signatures

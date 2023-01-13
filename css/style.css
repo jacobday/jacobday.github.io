@@ -319,6 +319,61 @@ section.projects .meta a.secondary {
   will-change: scroll-position;
 }
 
+/* Footer */
+footer {
+  height: 375px;
+  /* width: 100vw; */
+  background-color: var(--color-background-dark);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+
+  padding: 4em;
+  padding-bottom: 2.5em;
+  margin-top: 4em;
+
+}
+
+footer .links {
+
+  
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+footer .links a {
+  color: rgba(255, 255, 255, 0.93);
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+footer .links a:hover, footer .links a:active {
+color: white;
+border-bottom: 0.13em solid white;
+
+}
+
+footer .signature {
+height: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+footer .signature svg {
+  width: 65%;
+}
+
+footer .signature svg * {
+  stroke: #4F4E54;
+}
+
 /* Animations */
 .signature-reveal {
   animation-name: strokeOffset;
@@ -361,6 +416,17 @@ section.projects .meta a.secondary {
 
   section.projects .image-container {
     height: 435px;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: unset;
+
+    padding: 0 calc(7vw + 58px);
+  }
+
+  footer .signature svg {
+    width: 55%;
   }
 }
 
