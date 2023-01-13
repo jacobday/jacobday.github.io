@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3X7WQRJNLY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3X7WQRJNLY");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Fontawesome 6 -->
+    <script
+      src="https://kit.fontawesome.com/e47b80ef99.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Athlos Case Study</title>
+  </head>
+  <body>
+    <template id="projectLayout" data-project-id="in-color">
+      <!-- Header -->
+      <header>
+        <img src="./athlos-header.png" />
+      </header>
+
+      <div class="wrapper">
+        <!-- Section: Meta -->
+        <section class="meta-container">
+          <div class="meta">
+            <a class="visit" href="https://athlos.vercel.app" target="_blank"
+              >Visit</a
+            >
+            <p class="context">Class: Software Engineering</p>
+          </div>
+          <div>
+            <p class="year">2022</p>
+          </div>
+        </section>
+
+        <!-- Section: About -->
+        <section class="about">
+          <p class="fullName">Athlos Booking Management</p>
+          <div class="info">
+            <p class="fullDescription">
+              Reserve your favorite sports facilities, hire personal trainers,
+              and enlist game officials to oversee your next match. Development
+              was distributed into 5 two-week sprints utilizing Agile
+              development models.
+            </p>
+            <ul class="tags">
+              <template id="tagTemplate">
+                <li><span>•</span> React</li>
+              </template>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Section: Video Demo -->
+      <section class="demo">
+        <!-- prettier-ignore -->
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CGNq9niOS1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="overlay">
+          <div>
+            <ul>
+              <li>
+                <a href="https://jacob.day"
+                  ><i class="fa-solid fa-arrow-right"></i> Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/jacobday" target="_blank"
+                  ><i class="fa-solid fa-arrow-right"></i> GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">&copy; Jacob Day 2023</div>
+        </div>
+        <div class="next">
+          <h2>‘We will always outlive the people who hate us’</h2>
+          <a href="../antisemitism"
+            >Scroll to next project <i class="fa-solid fa-arrow-down"></i
+          ></a>
+
+          <div class="scrollTrigger"></div>
+        </div>
+      </footer>
+    </template>
+
+    <script src="../assets/data/projects.json" type="text/json"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

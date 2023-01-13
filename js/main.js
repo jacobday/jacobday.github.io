@@ -60,7 +60,7 @@ function initProjects(dataJSON) {
     const secondaryLink = cardTemplate.querySelector("a.secondary");
 
     if ("caseStudy" in element) {
-      primaryLink.href = element.caseStudy.url;
+      primaryLink.href = `./projects/${element.caseStudy.url}`;
     } else {
       primaryLink.style.display = "none";
       secondaryLink.style.paddingLeft = 0;
@@ -79,7 +79,6 @@ function initObservers() {
   let signatureObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
           const paths = entry.target.querySelectorAll("path");
 
@@ -208,7 +207,7 @@ function loadJSON(fileName) {
   xobj.send();
 }
 
-loadJSON("./assets/data/projects.json");
+loadJSON("./projects/assets/data/projects.json");
 
 initSignature();
 initObservers();
