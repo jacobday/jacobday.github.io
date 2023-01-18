@@ -4,7 +4,7 @@
 
   --padding-x: 48px;
 
-  --section-height: 95vh;
+  --section-height: 90vh;
   --section-spacing: 4em;
 }
 
@@ -214,6 +214,7 @@ footer .next a {
   padding: 0.6em 1.5em;
 
   backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
   transition: all 0.2s ease;
 }
 

@@ -74,9 +74,14 @@ function initLayout(layoutJSON) {
 
   // Next project image
   if ("preview" in nextJSON.caseStudy.images) {
-    layoutTemplate.querySelector(
-      "footer"
-    ).style.backgroundImage = `url(../${nextJSON.caseStudy.url}/${nextJSON.caseStudy.images.preview.src})`;
+
+    const footer = layoutTemplate.querySelector("footer");
+    const backgroundImage = `url(../${nextJSON.caseStudy.url}/${nextJSON.caseStudy.images.preview.src})`;
+
+    footer.style = `background-image: ${backgroundImage}; ${nextJSON.caseStudy.images.preview.style}`;
+
+    const projectName = footer.querySelector(".next h2");
+    projectName.style.color = nextJSON.caseStudy.images.preview.textColor;
   } else {
     layoutTemplate.querySelector(
       "footer"

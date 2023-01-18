@@ -27,7 +27,9 @@
           "alt": "Screenshot of Athlos Booking Management's index page. The header reads 'The #1 Sports Booking Platform. Athlos is the easiest way to reserve sports facilities on campus. Sign up free.'"
         },
         "preview": {
-          "src": "runner.png"
+          "src": "runner.png",
+          "style": "background-size: 75%; background-position: bottom center;",
+          "textColor": ""
         }
       }
     }
@@ -51,7 +53,7 @@
         "fullDescription": "Antisemitic incidents reached an all-time high in the U.S. in 2021.",
         "year": 2022
       },
-      "tags": ["Horizontal scrolling", "Animation", "Design"],
+      "tags": ["Publication", "Animation", "Design", "Horizontal scrolling"],
       "images": {
         "header": {
           "src": "maya.jpg",
@@ -66,14 +68,14 @@
     "url": "https://github.com/jacobday/InColor",
     "description": "Unleash your creativity with the ultimate drawing and tracing tool on iOS and iPadOS.",
     "featureImage": {
-      "src": "./projects/in-color/in-color.svg",
+      "src": "./projects/in-color/in-color-header.jpg",
       "alt": "Illustration of a pen",
-      "style": "object-fit: fill"
+      "style": "object-fit: cover"
     },
     "caseStudy": {
       "url": "in-color",
-      "primaryColor": "#eef9f9",
-      "buttonColor": "rgba(206, 249, 249, 0.6)",
+      "primaryColor": "#fff",
+      "buttonColor": "rgba(190, 117, 244,0.4)",
       "meta": {
         "fullName": "In Color",
         "context": "Class: Mobile App Development (iOS)",
@@ -83,8 +85,14 @@
       "tags": ["Swift", "MVC", "UI/UX Design"],
       "images": {
         "header": {
-          "src": "in-color.svg",
-          "alt": "Illustration of a pen"
+          "src": "in-color-header.jpg",
+          "alt": "Illustration of a pen",
+          "style:": "object-fit: cover; object-position: bottom center;"
+        },
+        "preview": {
+          "src": "in-color-header.jpg",
+          "style": "background-size: cover; background-position: bottom center;",
+          "textColor": "transparent"
         }
       }
     }
