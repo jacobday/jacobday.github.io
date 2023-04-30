@@ -16,7 +16,7 @@
       "meta": {
         "fullName": "Athlos Booking Management",
         "context": "Class: Software Engineering",
-        "fullDescription": "Reserve your favorite sports facilities, hire personal trainers, and enlist game officials to oversee your next match.   Development was distributed into 5 two-week sprints utilizing Agile development models.",
+        "fullDescription": "Reserve your favorite sports facilities, hire personal trainers, and enlist game officials to oversee your next match.   Development was distributed into 5 two-week sprints utilizing an Agile workflow.",
         "year": 2022
       },
       "tags": ["React", "Express.js", "Design", "Brand identity"],
