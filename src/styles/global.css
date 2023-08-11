@@ -5,7 +5,12 @@
 
   --color-background: #040614;
   --color-text-white: white;
+  --color-purple: #915eff;
   --color-text-secondary: #7D808B;
+
+  --width-xl: 80rem;
+
+  --padding-x: 1.5rem;
 }
 
 html {
@@ -20,6 +25,13 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Small Screens */
+@media (min-width: 640px) {
+  :root {
+    --padding-x: 4rem;
+  }
 }
 
 .hash-span {
@@ -42,7 +54,7 @@ a {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
+/* .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
@@ -50,7 +62,7 @@ a {
     #804dee 0%,
     rgba(60, 51, 80, 0) 100%
   );
-}
+} */
 
 .green-pink-gradient {
   background: "#00cea8";

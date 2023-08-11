@@ -12,9 +12,9 @@ nav {
   // Navigation container
   .container {
     width: 100%;
-    max-width: 80rem;
+    max-width: var(--width-xl);
 
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem var(--padding-x);
     margin-left: 0;
     margin-right: 0;
 
@@ -109,8 +109,8 @@ ul.linkContainer {
   nav {
     // Navigation container
     .container {
-      padding-left: 4rem;
-      padding-right: 4rem;
+      padding-left: var(--padding-x);
+      padding-right: var(--padding-x);
     }
     
     // Desktop navigation
