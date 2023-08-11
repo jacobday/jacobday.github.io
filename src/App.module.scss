@@ -1,0 +1,17 @@
+main.app {
+  background-color: var(--color-background);
+
+  position: relative;
+  z-index: 0;
+}
+
+section.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.contact {
+  position: relative;
+  z-index: 0;
+}

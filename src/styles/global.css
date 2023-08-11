@@ -2,6 +2,10 @@
 
 :root {
   --font-sans-serif: "Poppins", sans-serif;
+
+  --color-background: #040614;
+  --color-text-white: white;
+  --color-text-secondary: #7D808B;
 }
 
 html {
@@ -11,6 +15,11 @@ html {
 
 body {
   font-family: var(--font-sans-serif);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .hash-span {

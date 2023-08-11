@@ -19,3 +19,8 @@ export { default as figmaLogo } from "./languages/figma.png";
 export { default as gitLogo } from "./languages/git.png";
 export { default as reduxLogo } from "./languages/redux.png";
 export { default as tailwindLogo } from "./languages/tailwind.png";
+
+// Navigation icons
+export { default as closeIcon } from "./navigation/close.svg";
+export { default as menuIcon } from "./navigation/menu.svg";
+export { default as logoIcon } from "./navigation/logo.svg";
