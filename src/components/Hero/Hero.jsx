@@ -30,6 +30,23 @@ const Hero = () => {
 
       {/* Computer Model */}
       <ComputersCanvas />
+
+      {/* Scroll Icon */}
+      <div className={styles.scrollContainer}>
+        <a href="#about">
+          <div className={styles.mouse}>
+            <motion.div
+              className={styles.scrollWheel}
+              animate={{ y: [0, 32, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
