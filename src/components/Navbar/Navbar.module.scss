@@ -40,7 +40,7 @@ nav {
 
 // Navigation links
 ul.linkContainer {
-  color: var(--color-text-secondary);
+  color: var(--color-gray);
   font-size: 18px;
   font-weight: 500;
 
@@ -55,11 +55,11 @@ ul.linkContainer {
   }
 
   li:hover {
-    color: var(--color-text-white);
+    color: var(--color-white);
   }
 
   li.active {
-    color: var(--color-text-white);
+    color: var(--color-white);
   }
 }
 
@@ -112,7 +112,7 @@ ul.linkContainer {
       padding-left: var(--padding-x);
       padding-right: var(--padding-x);
     }
-    
+
     // Desktop navigation
     ul.linkContainer {
       display: flex;
