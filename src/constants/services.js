@@ -1,22 +1,20 @@
 import { mobile, backend, creator, web } from "../assets";
 
-const services = [
+export const services = [
   {
-    title: "Web Developer",
+    title: "Web Designer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "React Native Developer",
+    icon: mobile,
+  },
+  {
+    title: "Photographer",
     icon: creator,
   },
 ];
-
-export default services;

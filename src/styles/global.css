@@ -5,6 +5,7 @@
 
   --color-background: #040614;
   --color-primary: #915eff;
+  --color-secondary: #140f36;
   --color-white: white;
   --color-gray: #7d808b;
 
@@ -63,11 +64,11 @@ a {
   );
 } */
 
-.green-pink-gradient {
+/* .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-}
+} */
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */

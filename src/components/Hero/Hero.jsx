@@ -24,7 +24,9 @@ const Hero = () => {
             Hi, I'm <span>Jacob</span>
           </h1>
 
-          <h2>I develop 3D visuals, user interfaces, and web applications</h2>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti.
+          </h2>
         </div>
       </div>
 
