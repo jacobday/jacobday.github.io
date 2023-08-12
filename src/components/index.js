@@ -6,5 +6,5 @@ export { default as Hero } from "./Hero/Hero";
 export { default as Loader } from "./Loader/Loader";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as Tech } from "./Tech/Tech";
-export { default as Works } from "./Works/Works";
+export { default as Projects } from "./Projects/Projects";
 export * as CanvasComponents from "./canvas";

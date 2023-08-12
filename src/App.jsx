@@ -8,8 +8,8 @@ import {
   Hero,
   Loader,
   Navbar,
+  Projects,
   Tech,
-  Works,
   CanvasComponents,
 } from "./components";
 import { StarsCanvas } from "./components/canvas";
@@ -28,9 +28,9 @@ const App = () => {
         {/* Sections */}
         <About />
         <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
+        {/* <Tech /> */}
+        <Projects />
+        {/* <Feedbacks /> */}
 
         {/* Contact Canvas */}
         <section className={styles.contact}>

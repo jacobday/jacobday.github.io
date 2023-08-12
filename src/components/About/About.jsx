@@ -9,15 +9,21 @@ import styles from "./About.module.scss";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className={styles.tilt}>
+    <Tilt
+      className={styles.tilt}
+      options={{
+        max: 25,
+        scale: 1,
+        speed: 1,
+        transition: true,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+      }}
+    >
       <motion.div
         className={styles.container}
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
       >
-        <div
-          className={styles.card}
-          options={{ max: 45, scale: 1, speed: 450 }}
-        >
+        <div className={styles.card}>
           <img src={icon} alt={title} />
           <h3>{title}</h3>
         </div>
