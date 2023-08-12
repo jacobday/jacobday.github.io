@@ -36,7 +36,7 @@ const Contact = () => {
 
           message: form.message,
         },
-        "cTE1HnzxjT9vQZP9a"
+        "cTE1HnzxjT9vQZP9a",
       )
       .then(
         () => {
@@ -51,7 +51,7 @@ const Contact = () => {
           console.error(error);
 
           alert("Message failed to send. Please try again.");
-        }
+        },
       );
   };
 
