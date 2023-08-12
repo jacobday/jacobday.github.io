@@ -1,4 +1,4 @@
-.card {
+.container {
   // Section Heading
   h1 {
     color: var(--color-gray);
@@ -108,7 +108,7 @@
 
 // Small Screens
 @media (min-width: 640px) {
-  .card {
+  .container {
     h1 {
       font-size: 18px;
     }
@@ -127,7 +127,7 @@
 
 //  Medium Screens
 @media (min-width: 768px) {
-  .card {
+  .container {
     h2 {
       font-size: 60px;
     }

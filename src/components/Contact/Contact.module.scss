@@ -1,0 +1,145 @@
+section.contact {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2.5rem;
+
+  overflow: hidden;
+
+  // Section Heading
+  h1 {
+    color: var(--color-gray);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    // margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 900;
+
+    margin: 0.5rem 0;
+  }
+}
+
+.formContainer {
+  background-color: var(--color-black);
+  border-radius: 1rem;
+
+  flex: 0.75;
+  padding: 2rem;
+}
+
+// Contact form
+section.contact {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 3rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    // Input field labels
+    label {
+      font-weight: 500;
+    }
+
+    // Input fields
+    input,
+    textarea {
+      color: var(--color-wnite);
+      background-color: var(--color-secondary);
+
+      padding: 1rem 1.5rem;
+
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+
+      &::placeholder {
+        color: var(--color-gray);
+      }
+    }
+
+    // Send button
+    button {
+      width: fit-content;
+      color: var(--color-white);
+      font-weight: 700;
+
+      background-color: var(--color-secondary);
+
+      padding: 0.75rem 2rem;
+
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+
+      box-shadow:
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+      cursor: pointer;
+
+      &:disabled {
+        cursor: wait;
+      }
+    }
+  }
+}
+
+// Earth model
+.modelContainer {
+  height: 350px;
+}
+
+// Small Screens
+@media (min-width: 640px) {
+  section.contact {
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
+
+//  Medium Screens
+@media (min-width: 768px) {
+  section.contact {
+    // margin-top: 3rem;
+    // flex-direction: row;
+
+    h2 {
+      font-size: 60px;
+    }
+  }
+
+  .modelContainer {
+    height: 550px;
+    // height: auto;
+    // flex: 1;
+  }
+}
+
+// Extra-large devices (large desktops, 1280px and up)
+@media (min-width: 1280px) {
+  section.contact {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+
+  .modelContainer {
+    height: auto;
+    flex: 1;
+  }
+}
