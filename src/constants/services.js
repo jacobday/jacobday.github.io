@@ -9,10 +9,10 @@ export const services = [
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+  // {
+  //   title: "React Native Developer",
+  //   icon: mobile,
+  // },
   {
     title: "Photographer",
     icon: creator,

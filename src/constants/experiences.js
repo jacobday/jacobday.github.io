@@ -3,9 +3,9 @@ import {
   starbucksLogo,
   teslaLogo,
   shopifyLogo,
-} from "../assets/images/logos/companies";
+} from "../assets/images/icons";
 
-const experiences = [
+export const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -59,5 +59,3 @@ const experiences = [
     ],
   },
 ];
-
-export default experiences;
