@@ -1,6 +1,9 @@
+@use "sass:map";
+@import "../../styles/variables.scss";
+
 .about {
   h1 {
-    color: var(--color-gray);
+    color: map.get($text-colors, "text");
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -9,6 +12,7 @@
   }
 
   h2 {
+    color: map.get($text-colors, "heading");
     font-size: 30px;
     font-weight: 900;
 
@@ -18,7 +22,7 @@
   p {
     max-width: 48rem;
 
-    color: var(--color-gray);
+    color: map.get($text-colors, "text");
     font-size: 17px;
 
     margin-top: 1rem;
@@ -47,20 +51,20 @@ section.cardContainer {
     box-shadow: 0px 35px 120px -15px #211e35;
 
     padding: 1px;
-    border-radius: 20px;
+    border-radius: map.get($border-radius, "outer");
   }
 }
 
 .card {
   min-height: 280px;
-  background-color: var(--color-secondary);
+  background-color: map.get($theme-colors, "secondary");
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 
-  border-radius: 20px;
+  border-radius: map.get($border-radius, "outer");
 
   padding: 1.25rem 3rem;
 
@@ -71,7 +75,7 @@ section.cardContainer {
   }
 
   h3 {
-    color: var(--color-white);
+    color: map.get($text-colors, "heading");
     font-size: 20px;
     font-weight: 700;
     text-align: center;

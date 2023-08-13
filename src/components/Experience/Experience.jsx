@@ -13,8 +13,8 @@ import styles from "./Experience.module.scss";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: "#1d1836", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentStyle={{ background: "#100d25", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid  #915eff" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={

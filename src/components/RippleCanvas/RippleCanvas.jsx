@@ -8,10 +8,7 @@ import styles from "./RippleCanvas.module.scss";
 const RippleCanvas = () => {
   return (
     <div className={styles.container}>
-      <Canvas
-        colorManagement={false}
-        camera={{ position: [100, 10, 0], fov: 75 }}
-      >
+      <Canvas camera={{ position: [100, 10, 0], fov: 75 }}>
         <Suspense fallback={null}>
           <OrbitControls
             enableZoom={false}

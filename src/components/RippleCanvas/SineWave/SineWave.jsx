@@ -20,7 +20,7 @@ const SineWave = ({
     (x, z) => {
       return Math.sin(frequency * (x ** 2 + z ** 2 + phaseShift)) * amplitude;
     },
-    [phaseShift, frequency, amplitude]
+    [phaseShift, frequency, amplitude],
   );
 
   // Plot the points on a square grid

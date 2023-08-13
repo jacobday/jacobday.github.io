@@ -1,5 +1,8 @@
+@use "sass:map";
+@import "styles/variables.scss";
+
 main.app {
-  background-color: var(--color-background);
+  background-color: map.get($theme-colors, "background");
 
   position: relative;
   z-index: 0;

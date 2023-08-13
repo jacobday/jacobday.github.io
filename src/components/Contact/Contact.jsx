@@ -67,39 +67,39 @@ const Contact = () => {
         <form ref={formRef} onSubmit={handleSubmit}>
           {/* Name Input */}
           <div>
-            <label htmlFor="name">Your name</label>
+            <label htmlFor="name">Name</label>
             <input
               name="name"
               type="text"
               value={form.name}
               onChange={handleChange}
-              placeholder="What is your name?"
+              placeholder="Enter your name"
               required
             />
           </div>
 
           {/* E-mail Input */}
           <div>
-            <label htmlFor="email">Your email</label>
+            <label htmlFor="email">Email</label>
             <input
               name="email"
               type="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What is your email address?"
+              placeholder="Enter your email"
               required
             />
           </div>
 
           {/* Message Input */}
           <div>
-            <label htmlFor="message">Your message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What is your message?"
+              placeholder="Enter your message"
               required
             />
           </div>

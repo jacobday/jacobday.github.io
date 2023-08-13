@@ -1,3 +1,6 @@
+@use "sass:map";
+@import "../../styles/variables.scss";
+
 section.contact {
   display: flex;
   flex-direction: column-reverse;
@@ -7,15 +10,14 @@ section.contact {
 
   // Section Heading
   h1 {
-    color: var(--color-gray);
+    color: map.get($text-colors, "text");
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-
-    // margin-top: 3rem;
   }
 
   h2 {
+    color: map.get($text-colors, "heading");
     font-size: 30px;
     font-weight: 900;
 
@@ -24,8 +26,12 @@ section.contact {
 }
 
 .formContainer {
-  background-color: var(--color-black);
-  border-radius: 1rem;
+  background-color: rgba($color: map.get($theme-colors, "tertiary"), $alpha: 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid map.get($theme-colors, "tertiary");
+  border-radius: map.get($border-radius, "outer");
 
   flex: 0.75;
   padding: 2rem;
@@ -48,48 +54,65 @@ section.contact {
 
     // Input field labels
     label {
+      color: map.get($text-colors, "heading");
       font-weight: 500;
     }
 
     // Input fields
     input,
     textarea {
-      color: var(--color-wnite);
-      background-color: var(--color-secondary);
+      color: map.get($text-colors, "heading");
+      background-color: map.get($theme-colors, "secondary");
 
       padding: 1rem 1.5rem;
 
       outline: none;
       border: none;
-      border-radius: 0.5rem;
+      border-radius: map.get($border-radius, "inner");
 
       &::placeholder {
-        color: var(--color-gray);
+        color: map.get($text-colors, "text");
+      }
+
+      &:focus {
+        outline: 1px solid map.get($theme-colors, "primary");
       }
     }
 
     // Send button
     button {
       width: fit-content;
-      color: var(--color-white);
+      color: map.get($text-colors, "heading");
       font-weight: 700;
 
-      background-color: var(--color-secondary);
+      background-color: map.get($theme-colors, "secondary");
 
       padding: 0.75rem 2rem;
 
-      outline: none;
+      outline: 1px solid transparent;
       border: none;
-      border-radius: 0.5rem;
+      border-radius: map.get($border-radius, "inner");
 
       box-shadow:
         0 4px 6px -1px rgb(0 0 0 / 0.1),
         0 2px 4px -2px rgb(0 0 0 / 0.1);
 
+      transition: all $transition-speed;
       cursor: pointer;
 
+      &:hover,
+      &:focus,
+      &:active,
       &:disabled {
-        cursor: wait;
+        outline: 1px solid map.get($theme-colors, "primary");
+        background-color: darken(
+          $color: map.get($theme-colors, "secondary"),
+          $amount: 3
+        );
+      }
+
+      &:disabled {
+        cursor: default;
       }
     }
   }
@@ -116,9 +139,6 @@ section.contact {
 //  Medium Screens
 @media (min-width: 768px) {
   section.contact {
-    // margin-top: 3rem;
-    // flex-direction: row;
-
     h2 {
       font-size: 60px;
     }
@@ -126,8 +146,6 @@ section.contact {
 
   .modelContainer {
     height: 550px;
-    // height: auto;
-    // flex: 1;
   }
 }
 

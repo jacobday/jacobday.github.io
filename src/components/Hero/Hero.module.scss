@@ -1,5 +1,63 @@
+@use "sass:map";
+@import "../../styles/variables.scss";
+
 section.hero {
   height: 100vh;
 
-  background-color: #060815;
+  background-color: #060815; // TODO replace with variable
+}
+
+section.hero header {
+  max-width: $width-xl;
+
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+  margin-left: auto;
+  margin-right: auto;
+
+  position: absolute;
+  top: 80px;
+  z-index: 10;
+
+  h1 {
+    color: map.get($text-colors, "heading");
+    font-size: 40px;
+    font-weight: 900;
+
+    margin-bottom: 0;
+
+    span {
+      color: map.get($theme-colors, "primary");
+    }
+  }
+
+  h2 {
+    color: map.get($text-colors, "text");
+    font-size: 20px;
+
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+}
+
+// Small Screens
+@media (min-width: 640px) {
+  section.hero header {
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      max-width: 500px;
+    }
+  }
+}
+
+// Large Screens
+@media (min-width: 1024px) {
+  section.hero header {
+    h1 {
+      font-size: 80px;
+    }
+  }
 }
