@@ -1,3 +1,6 @@
+// Branding logos
+export { default as initialLogo } from "./branding/initial.png";
+
 // Company logos
 export { default as idsLogo } from "./companies/ids.svg";
 export { default as lpcscLogo } from "./companies/lpcsc.jpg";
@@ -21,4 +24,3 @@ export { default as tailwindLogo } from "./languages/tailwind.png";
 // Navigation icons
 export { default as closeIcon } from "./navigation/close.svg";
 export { default as menuIcon } from "./navigation/menu.svg";
-export { default as logoIcon } from "./navigation/logo.svg";

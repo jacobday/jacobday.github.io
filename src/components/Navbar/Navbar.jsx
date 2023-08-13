@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../constants/navLinks";
-import { closeIcon, logoIcon, menuIcon } from "../../assets/images/icons";
+import { closeIcon, initialLogo, menuIcon } from "../../assets/images/icons";
 
 import styles from "./Navbar.module.scss";
 
@@ -21,8 +21,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logoIcon} alt="logo" className={styles.logo} />
-          <p>Portfolio</p>
+          <img src={initialLogo} alt="logo" className={styles.logo} />
         </Link>
 
         {/* Desktop Navigation Links */}

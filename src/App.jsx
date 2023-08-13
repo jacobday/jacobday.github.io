@@ -6,11 +6,9 @@ import {
   Experience,
   Feedbacks,
   Hero,
-  Loader,
   Navbar,
   Projects,
   Tech,
-  CanvasComponents,
 } from "./components";
 import { StarsCanvas } from "./components/canvas";
 import styles from "./App.module.scss";
@@ -20,10 +18,8 @@ const App = () => {
     <BrowserRouter>
       <main className={styles.app}>
         {/* Header */}
-        <section className={styles.header}>
-          {/* <Navbar /> */}
-          <Hero />
-        </section>
+        <Navbar />
+        <Hero />
 
         {/* Sections */}
         <About />
