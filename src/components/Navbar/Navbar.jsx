@@ -22,7 +22,7 @@ const Navbar = () => {
           }}
         >
           <img src={logoIcon} alt="logo" className={styles.logo} />
-          <p>Jacob</p>
+          <p>Portfolio</p>
         </Link>
 
         {/* Desktop Navigation Links */}

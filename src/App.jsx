@@ -21,7 +21,7 @@ const App = () => {
       <main className={styles.app}>
         {/* Header */}
         <section className={styles.header}>
-          <Navbar />
+          {/* <Navbar /> */}
           <Hero />
         </section>
 

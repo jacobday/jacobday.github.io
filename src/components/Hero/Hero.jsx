@@ -4,7 +4,7 @@ import { ComputersCanvas } from "../canvas";
 
 import styles from "./Hero.module.scss";
 
-const Hero = () => {
+const Hero = ({ scrollToAbout }) => {
   return (
     <section className={styles.hero}>
       {/* Greeting Container */}
@@ -24,9 +24,7 @@ const Hero = () => {
             Hi, I'm <span>Jacob</span>
           </h1>
 
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti.
-          </h2>
+          <h2>creative developer && software engineer</h2>
         </div>
       </div>
 
@@ -34,21 +32,19 @@ const Hero = () => {
       <ComputersCanvas />
 
       {/* Scroll Icon */}
-      <div className={styles.scrollContainer}>
-        <a href="#about">
-          <div className={styles.mouse}>
-            <motion.div
-              className={styles.scrollWheel}
-              animate={{ y: [0, 32, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-            />
-          </div>
-        </a>
-      </div>
+      {/* <div className={styles.scrollContainer}>
+        <div className={styles.mouse} onClick={scrollToAbout}>
+          <motion.div
+            className={styles.scrollWheel}
+            animate={{ y: [0, 32, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+          />
+        </div>
+      </div> */}
     </section>
   );
 };

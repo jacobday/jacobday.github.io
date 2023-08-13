@@ -66,11 +66,9 @@ const Projects = () => {
       {/* Section Description */}
       <div className={styles.description}>
         <motion.p variants={fadeIn()}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde
-          quo laboriosam sapiente. Non nemo nulla molestias placeat quibusdam!
-          Ab beatae ullam dicta quisquam delectus! Voluptatibus ratione aliquam
-          libero tempora, ipsum molestias voluptatem? Beatae provident ea
-          ratione quos amet aut?
+          A showcase of my skills and experience through real-world examples of
+          my work. These projects reflect my ability to solve complex problems,
+          work with different technologies, and deliver a polished product.
         </motion.p>
       </div>
 

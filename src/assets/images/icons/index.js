@@ -1,8 +1,6 @@
 // Company logos
-export { default as metaLogo } from "./companies/meta.png";
-export { default as shopifyLogo } from "./companies/shopify.png";
-export { default as starbucksLogo } from "./companies/starbucks.png";
-export { default as teslaLogo } from "./companies/tesla.png";
+export { default as idsLogo } from "./companies/ids.svg";
+export { default as lpcscLogo } from "./companies/lpcsc.jpg";
 export { default as githubLogo } from "./companies/github.png";
 
 // Language logos

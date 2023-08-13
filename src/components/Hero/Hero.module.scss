@@ -23,7 +23,8 @@ section.hero {
   gap: 1.25rem;
 
   position: absolute;
-  top: 120px;
+  top: 80px;
+  z-index: 10;
 
   h1 {
     color: var(--color-white);
@@ -31,6 +32,7 @@ section.hero {
     font-weight: 900;
 
     margin-top: 0.5rem;
+    margin-bottom: 0;
 
     span {
       color: var(--color-primary);
@@ -98,6 +100,7 @@ section.hero {
 
     border: var(--color-gray) 4px solid;
     border-radius: 35px;
+    cursor: pointer;
 
     .scrollWheel {
       width: 0.75rem;

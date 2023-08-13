@@ -1,34 +1,34 @@
 import {
-  carrentProject,
-  jobitProject,
-  tripguideProject,
+  athlosProject,
+  kvstoreProject,
+  ephemeraProject,
 } from "../assets/images/projects";
 
 export const projects = [
   {
-    name: "Car Rent",
+    name: "Distributed Key-Value Store",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: ["react", "mongoDB", "expressJS"],
+      "A Python-based distributed key-value store with support for various consistency levels, including eventual, causal, sequential, and linear consistency. ",
+    tags: ["python", "networking", "multithreading"],
 
-    image: carrentProject,
+    image: kvstoreProject,
     github: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Athlos Booking Management",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: ["react", "restapi", "scss"],
+      "Web application that enables users to search for sports facilities, hire personal trainers, and enlist officials to oversee their next sporting event.",
+    tags: ["mongoDB", "expressJS", "react", "nodeJS"],
 
-    image: jobitProject,
-    github: "https://github.com/",
+    image: athlosProject,
+    github: "https://github.com/jacobday/athlos",
   },
   {
-    name: "Trip Guide",
+    name: "Ephemera: Temporary Notes",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: ["nextJS", "supabase", "css"],
-    image: tripguideProject,
+      "An iOS application designed to offer users the ability to create and manage temporary (ephemeral) notes that automatically delete.",
+    tags: ["swift", "ios", "icloud"],
+    image: ephemeraProject,
     github: "https://github.com/",
   },
 ];

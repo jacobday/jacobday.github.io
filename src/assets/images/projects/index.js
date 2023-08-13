@@ -1,3 +1,3 @@
-export { default as tripguideProject } from "./tripguide.png";
-export { default as jobitProject } from "./jobit.png";
-export { default as carrentProject } from "./carrent.png";
+export { default as athlosProject } from "./athlos.png";
+export { default as kvstoreProject } from "./kvstore.jpg";
+export { default as ephemeraProject } from "./ephemera.jpg";

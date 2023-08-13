@@ -1,6 +1,12 @@
+:root {
+  --color-navbar: rgba(var(--color-background), 0.95);
+}
+
 nav {
   width: 100%;
-  background-color: var(--color-background);
+  background-color: var(--color-navbar);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 
   display: flex;
   align-items: center;
@@ -14,7 +20,7 @@ nav {
     width: 100%;
     max-width: var(--width-xl);
 
-    padding: 1.25rem var(--padding-x);
+    padding: 0.75rem var(--padding-x);
     margin-left: 0;
     margin-right: 0;
 
