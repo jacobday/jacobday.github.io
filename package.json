@@ -1,13 +1,16 @@
 {
-  "name": "jacobday.github.io",
+  "name": "jacob.day",
+  "homepage": "https://jacobday.github.io/",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "pretty": "prettier --write \"./**/*.{js,jsx,json,css,scss,sass,html,md}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -32,6 +35,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "prettier": "^3.0.1",
     "sass": "^1.65.1",
     "vite": "^4.4.5"

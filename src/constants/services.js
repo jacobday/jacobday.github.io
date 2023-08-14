@@ -1,4 +1,4 @@
-import { mobile, backend, creator, web } from "../assets";
+import { mobile, backend, creator, web } from "../assets/images/icons";
 
 export const services = [
   {
