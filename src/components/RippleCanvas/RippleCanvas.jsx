@@ -5,18 +5,21 @@ import { degToRad } from "three/src/math/MathUtils";
 import SineWave from "./SineWave/SineWave";
 import styles from "./RippleCanvas.module.scss";
 
-const RippleCanvas = () => {
+const RippleCanvas = ({ isMobile }) => {
   return (
     <div className={styles.container}>
       <Canvas camera={{ position: [100, 10, 0], fov: 75 }}>
         <Suspense fallback={null}>
-          <OrbitControls
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2 - degToRad(10)}
-            minPolarAngle={Math.PI / 2 - degToRad(10)}
-            autoRotate
-            autoRotateSpeed={-0.1}
-          />
+          {/* Disable orbit controls if the website is being view on mobile */}
+          {!isMobile && (
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2 - degToRad(10)}
+              minPolarAngle={Math.PI / 2 - degToRad(10)}
+              autoRotate
+              autoRotateSpeed={-0.1}
+            />
+          )}
 
           <SineWave
             axisParticleCount={65} // The number of particles across one axis
