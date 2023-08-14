@@ -1,0 +1,166 @@
+@use "sass:map";
+@import "../../styles/variables.scss";
+
+section.contact {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2.5rem;
+
+  overflow: hidden;
+
+  // Section Heading
+  h1 {
+    color: map.get($text-colors, "text");
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    color: map.get($text-colors, "heading");
+    font-size: 30px;
+    font-weight: 900;
+
+    margin: 0.5rem 0;
+  }
+}
+
+.formContainer {
+  background-color: rgba(
+    $color: map.get($theme-colors, "tertiary"),
+    $alpha: 0.45
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid map.get($theme-colors, "tertiary");
+  border-radius: map.get($border-radius, "outer");
+
+  flex: 0.75;
+  padding: 2rem;
+}
+
+// Contact form
+section.contact {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 3rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    // Input field labels
+    label {
+      color: map.get($text-colors, "heading");
+      font-weight: 500;
+    }
+
+    // Input fields
+    input,
+    textarea {
+      color: map.get($text-colors, "heading");
+      background-color: map.get($theme-colors, "secondary");
+
+      padding: 1rem 1.5rem;
+
+      outline: none;
+      border: none;
+      border-radius: map.get($border-radius, "inner");
+
+      &::placeholder {
+        color: map.get($text-colors, "text");
+      }
+
+      &:focus {
+        outline: 1px solid map.get($theme-colors, "primary");
+      }
+    }
+
+    // Send button
+    button {
+      width: fit-content;
+      color: map.get($text-colors, "heading");
+      font-weight: 700;
+
+      background-color: map.get($theme-colors, "secondary");
+
+      padding: 0.75rem 2rem;
+
+      outline: 1px solid transparent;
+      border: none;
+      border-radius: map.get($border-radius, "inner");
+
+      box-shadow:
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+      transition: all $transition-speed;
+      cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:disabled {
+        outline: 1px solid map.get($theme-colors, "primary");
+        background-color: darken(
+          $color: map.get($theme-colors, "secondary"),
+          $amount: 3
+        );
+      }
+
+      &:disabled {
+        cursor: default;
+      }
+    }
+  }
+}
+
+// Earth model
+.modelContainer {
+  height: 350px;
+}
+
+// Small Screens
+@media (min-width: 640px) {
+  section.contact {
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
+
+//  Medium Screens
+@media (min-width: 768px) {
+  section.contact {
+    h2 {
+      font-size: 60px;
+    }
+  }
+
+  .modelContainer {
+    height: 550px;
+  }
+}
+
+// Extra-large devices (large desktops, 1280px and up)
+@media (min-width: 1280px) {
+  section.contact {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+
+  .modelContainer {
+    height: auto;
+    flex: 1;
+  }
+}

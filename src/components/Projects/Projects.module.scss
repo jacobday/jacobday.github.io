@@ -1,0 +1,142 @@
+@use "sass:map";
+@import "../../styles/variables.scss";
+
+.container {
+  // Section Heading
+  h1 {
+    color: map.get($text-colors, "text");
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    margin-top: 3rem;
+  }
+
+  h2 {
+    color: map.get($text-colors, "heading");
+    font-size: 30px;
+    font-weight: 900;
+
+    margin: 0.5rem 0;
+  }
+}
+
+// Section Description
+.description {
+  width: 100%;
+
+  display: flex;
+
+  p {
+    max-width: 48rem;
+    color: map.get($text-colors, "text");
+    font-size: 17px;
+
+    margin-top: 0.75rem;
+    line-height: 30px;
+  }
+}
+
+// Project Cards
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  justify-content: center;
+
+  margin-top: 5rem;
+}
+
+.card {
+  .container {
+    max-width: 360px;
+    background-color: map.get($theme-colors, "secondary");
+
+    padding: 1.25rem 1.25rem 2rem 1.25rem;
+    border-radius: map.get($border-radius, "outer");
+  }
+}
+
+// Project Image
+.image {
+  width: 100%;
+  height: 230px;
+
+  display: block;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: map.get($border-radius, "inner");
+    object-fit: cover;
+  }
+}
+
+// Project Name & Description
+.meta {
+  margin-top: 1.25rem;
+  min-height: 120px;
+
+  a {
+    color: map.get($text-colors, "heading");
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  p {
+    color: map.get($text-colors, "text");
+    font-size: 14px;
+
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  a:hover {
+    border-bottom: 0.125em solid map.get($text-colors, "heading");
+  }
+}
+
+// Project Tags
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-top: 1rem;
+
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+// Small Screens
+@media (min-width: 640px) {
+  .container {
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  .card {
+    .container {
+      width: 360px;
+    }
+  }
+}
+
+//  Medium Screens
+@media (min-width: 768px) {
+  .container {
+    h2 {
+      font-size: 60px;
+    }
+  }
+}

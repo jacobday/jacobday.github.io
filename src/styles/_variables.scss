@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Fonts
+$font-sans-serif: "Poppins", sans-serif;
+
+// Theme Colors
+$theme-colors: (
+  "primary": #915eff,
+  "secondary": #140f36,
+  "tertiary": #100d25,
+  "background": #050719,
+);
+
+// Text Colors
+$text-colors: (
+  "heading": rgb(255, 255, 255),
+  "text": rgba(255, 255, 255, 0.65),
+);
+
+// Border Radii
+$border-radius: (
+  "outer": 30px,
+  "inner": 15px,
+);
+
+// Element Sizing
+$width-xl: 80rem;
+
+// Animations
+$transition-speed: 0.15s ease-in-out;

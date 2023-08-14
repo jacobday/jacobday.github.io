@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+:root {
+  /* Element Sizing */
+  --padding-x: 1.5rem;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Small Screens */
+@media (min-width: 640px) {
+  :root {
+    --padding-x: 4rem;
+  }
+}
