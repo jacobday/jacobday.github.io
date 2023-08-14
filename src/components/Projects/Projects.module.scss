@@ -42,16 +42,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.75rem;
+  justify-content: center;
 
   margin-top: 5rem;
 }
 
 .card {
   .container {
-    width: 100%;
+    max-width: 360px;
     background-color: map.get($theme-colors, "secondary");
 
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 2rem 1.25rem;
     border-radius: map.get($border-radius, "outer");
   }
 }
@@ -89,6 +90,7 @@
     font-size: 14px;
 
     margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     line-height: 1.5;
   }
 
@@ -107,6 +109,7 @@
 
   p {
     font-size: 14px;
+    margin: 0;
   }
 }
 

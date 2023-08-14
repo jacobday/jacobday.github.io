@@ -34,11 +34,13 @@ section.cardContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
+  justify-content: center;
 
   margin-top: 5rem;
 
   .tilt {
     width: 100%;
+    max-width: 250px;
   }
 
   .container {
@@ -82,15 +84,6 @@ section.cardContainer {
   }
 }
 
-// Extra-small Screens {
-@media (min-width: 450px) {
-  section.cardContainer {
-    .tilt {
-      width: 250px;
-    }
-  }
-}
-
 // Small Screens
 @media (min-width: 640px) {
   .about {
@@ -110,5 +103,12 @@ section.cardContainer {
     h2 {
       font-size: 60px;
     }
+  }
+}
+
+// Extra-large devices (large desktops, 1280px and up)
+@media (min-width: 1280px) {
+  section.cardContainer {
+    justify-content: start;
   }
 }
