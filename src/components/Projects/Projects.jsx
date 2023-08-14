@@ -10,10 +10,22 @@ import styles from "./Projects.module.scss";
 import { Link } from "react-router-dom";
 
 const getUrl = (projectName) => {
-  return `/projects/${projectName.split(" ").join("-").toLowerCase()}`;
+  return `/projects/${projectName
+    .replace(/[^-\w\s]/gi, "") // Remove special characters
+    .split(" ")
+    .join("-")
+    .toLowerCase()}`;
 };
 
-const ProjectCard = ({ index, name, description, tags, image, github }) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  github,
+  url,
+}) => {
   return (
     <article className={styles.card}>
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -28,14 +40,25 @@ const ProjectCard = ({ index, name, description, tags, image, github }) => {
           }}
         >
           {/* Project Image */}
-          <Link className={styles.image} to={getUrl(name)}>
+          <Link
+            className={styles.image}
+            // to={getUrl(name)}
+            to={url}
+            target="_blank"
+          >
             <img src={image} alt={name} />
             {/* GitHub button: 1:55:20 */}
           </Link>
 
           {/* Project Name & Description */}
           <div className={styles.meta}>
-            <Link to={getUrl(name)}>{name}</Link>
+            <Link
+              // to={getUrl(name)}
+              to={url}
+              target="_blank"
+            >
+              {name}
+            </Link>
 
             <p>{description}</p>
           </div>
@@ -74,7 +97,7 @@ const Projects = () => {
 
       {/* Project Cards */}
       <div className={styles.wrapper}>
-        {projects.map((project, index) => (
+        {projects.slice(0, 3).map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

@@ -41,12 +41,12 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-        dolores officiis nihil incidunt quod molestias repellendus harum dolore
-        accusantium, nostrum aliquid modi asperiores. Nam commodi corrupti
-        suscipit quibusdam unde ad, molestias earum non at placeat numquam?
-        Tenetur veniam ea molestiae et dolorem ipsa odio, consequuntur nam,
-        porro sapiente magnam impedit.
+        I am a passionate and dedicated software engineer with a strong
+        background in web design and development. With a deep enthusiasm for
+        technology and a talent for problem-solving, I thrive in collaborative
+        environments where I can contribute to innovative products and make a
+        meaningful impact. Outside of work, I enjoy traveling, immersing myself
+        in new cultures, and capturing moments through photography.
       </motion.p>
 
       <section className={styles.cardContainer}>

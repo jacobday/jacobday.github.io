@@ -18,6 +18,7 @@ const colorDict = {
   swift: "#EDA050",
   ios: "#EB445A",
   icloud: "#007AFF",
+  ruby: "#CC342D",
 };
 
 export const getTagColor = (tagName) => {
