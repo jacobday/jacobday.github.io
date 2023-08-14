@@ -26,7 +26,10 @@ section.contact {
 }
 
 .formContainer {
-  background-color: rgba($color: map.get($theme-colors, "tertiary"), $alpha: 0.45);
+  background-color: rgba(
+    $color: map.get($theme-colors, "tertiary"),
+    $alpha: 0.45
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 

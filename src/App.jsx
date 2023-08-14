@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import {
@@ -12,20 +13,38 @@ import { StarsCanvas } from "./components/canvas";
 import styles from "./App.module.scss";
 
 const App = () => {
+  const aboutRef = React.useRef();
+  const experienceRef = React.useRef();
+  const projectsRef = React.useRef();
+  const contactRef = React.useRef();
+
   return (
     <BrowserRouter>
       <main className={styles.app}>
         {/* Header */}
-        <Navbar />
+        <Navbar
+          aboutRef={aboutRef}
+          experienceRef={experienceRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+        />
         <Hero />
 
         {/* Sections */}
-        <About />
-        <Experience />
-        <Projects />
+        <div ref={aboutRef}>
+          <About />
+        </div>
+
+        <div ref={experienceRef}>
+          <Experience />
+        </div>
+
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
 
         {/* Contact Canvas */}
-        <section className={styles.contact}>
+        <section ref={contactRef} className={styles.contact}>
           <Contact />
           <StarsCanvas />
         </section>
