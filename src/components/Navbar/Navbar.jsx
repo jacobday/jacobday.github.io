@@ -47,15 +47,37 @@ const Navbar = ({ aboutRef, experienceRef, projectsRef, contactRef }) => {
     }
   };
 
-  useEffect(() => {
+  // Set the y position of each section
+  const setYPositions = () => {
     aboutY = aboutRef.current.offsetTop;
     experienceY = experienceRef.current.offsetTop;
     projectsY = projectsRef.current.offsetTop;
     contactY = contactRef.current.offsetTop;
-    navHeight = navRef.current.offsetHeight;
+  };
 
+  const handleResize = () => {
+    setYPositions();
+  };
+
+  useEffect(() => {
+    setYPositions();
+    navHeight = navRef.current.offsetHeight;
+    handleScroll();
+
+    // Change the active link based on the current scroll position
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    // Update the y position of each section when the window is resized
+    window.addEventListener("resize", () => {
+      handleResize();
+      handleScroll();
+    });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", () => {
+        handleResize, handleScroll;
+      });
+    };
   }, [aboutY, experienceY, projectsY, contactY, navHeight]);
 
   return (
