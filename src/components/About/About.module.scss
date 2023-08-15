@@ -58,7 +58,7 @@ section.cardContainer {
 }
 
 .card {
-  min-height: 280px;
+  aspect-ratio: 1/1;
   background-color: map.get($theme-colors, "secondary");
 
   display: flex;
@@ -81,6 +81,13 @@ section.cardContainer {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    min-height: 280px;
+    aspect-ratio: unset;
   }
 }
 

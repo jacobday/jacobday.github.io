@@ -57,6 +57,7 @@ const Navbar = ({ aboutRef, experienceRef, projectsRef, contactRef }) => {
 
   const handleResize = () => {
     setYPositions();
+    navHeight = navRef.current.offsetHeight;
   };
 
   useEffect(() => {
@@ -84,7 +85,8 @@ const Navbar = ({ aboutRef, experienceRef, projectsRef, contactRef }) => {
     <nav
       ref={navRef}
       style={{
-        backgroundColor: transparent ? "rgba(6, 7, 20, 0.9)" : "",
+        backgroundColor: transparent ? "rgba(6, 8, 20, 0.9)" : "",
+        borderColor: transparent ? "rgba(6, 8, 20, 1)" : "",
       }}
     >
       <div className={styles.container}>
